@@ -103,24 +103,61 @@ You need to install the following tools and configure their dependencies:
     java -cp target/LinkedListMeanStdDevCalculator-1.0-SNAPSHOT.jar edu.escuelaing.arsw.MeanStdDevCalculator
     <Add your file path>
     ```
-    For example:
+     For example:
+
+    If we want to know the standard deviation and the arithmetic mean of the following two tables, which are in the 'example' file
+
+     ```txt
+    Column 1 
+    Estimate Proxy
+    Size
+    160
+    591
+    114
+    229
+    230
+    270
+    128
+    1657
+    624
+    1503
+
+    Column 2
+    Development
+    Hours
+    15.0
+    69.9
+    6.5
+    22.4
+    28.4
+    65.9
+    19.4
+    198.7
+    38.8
+    138.2
+
+    ```
+
+    We need to enter the following commands
+
     ```sh
     java -cp target/LinkedListMeanStdDevCalculator-1.0-SNAPSHOT.jar edu.escuelaing.arsw.MeanStdDevCalculator
      
-    Ingrese la ruta del archivo: src/test/resources/multiple_tables.txt
+    Ingrese la ruta del archivo: C:/Users/alexa/LinkedListMeanStdDevCalculator/src/test/java/edu/escuelaing/arsw/resources/example.txt
     ```
 
     The output should be:
     ```sh
     Tabla 1:
-    Media: 550.60
-    Desviación Estándar: 572.03
-    
+    Media: 550,60
+    Desviación Estándar: 572,03
+
     Tabla 2:
-    Media: 60.32
-    Desviación Estándar: 62.26
+    Media: 60,32
+    Desviación Estándar: 62,26
     ```
-![Example](<https://github.com/alexandrac1420/MeanStdDevCalculator/blob/master/Pictures/Captura%20de%20pantalla%202024-06-15%20200853.png>)
+![Example](<![alt text](![image](https://github.com/alexandrac1420/MeanStdDevCalculator/assets/138069735/56a2363c-c976-4036-9ef8-e9720dbc2dbf)
+)>)
 
 ## Test Report - MeanStdDevCalculator
 
