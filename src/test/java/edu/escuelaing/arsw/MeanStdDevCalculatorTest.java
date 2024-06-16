@@ -61,4 +61,16 @@ public class MeanStdDevCalculatorTest extends TestCase {
         assertTrue(output.contains("Media: 15,00"));
         assertTrue(output.contains("Desviación Estándar: 7,07"));
     }
+
+    public void testProcessNumbersIgnoreText() {
+        String[] args = {"src/test/java/edu/escuelaing/arsw/resources/file_with_text.txt"};
+        MeanStdDevCalculator.main(args);
+        String output = outContent.toString().trim();
+        assertTrue(output.contains("Tabla 1:"));
+        assertTrue(output.contains("Media: 10,33"));
+        assertTrue(output.contains("Desviación Estándar: 5,01"));
+        assertTrue(output.contains("Tabla 2:"));
+        assertTrue(output.contains("Media: 25,17"));
+        assertTrue(output.contains("Desviación Estándar: 5,01"));
+    }
 }

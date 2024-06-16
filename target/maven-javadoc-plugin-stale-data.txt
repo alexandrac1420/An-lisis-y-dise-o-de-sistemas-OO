@@ -1,0 +1,51 @@
+@options
+@packages
+@argfile
+-encoding
+'UTF-8'
+-protected
+-sourcepath
+'C:/Users/alexa/LinkedListMeanStdDevCalculator/src/main/java'
+-author
+-bottom
+'Copyright &#169; 2024. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'C:/Users/alexa/LinkedListMeanStdDevCalculator/target/site/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'LinkedListMeanStdDevCalculator 1.0-SNAPSHOT API'
+-linkoffline
+'https://docs.oracle.com/javase/8/docs/api' 'C:/Users/alexa/LinkedListMeanStdDevCalculator/target/javadoc-bundle-options'
+-use
+-version
+-windowtitle
+'LinkedListMeanStdDevCalculator 1.0-SNAPSHOT API'
+edu.escuelaing.arsw
+'C:/Users/alexa/LinkedListMeanStdDevCalculator/src/main/java/edu/escuelaing/arsw/LinkedList.java'
+'C:/Users/alexa/LinkedListMeanStdDevCalculator/src/main/java/edu/escuelaing/arsw/MeanCalculator.java'
+'C:/Users/alexa/LinkedListMeanStdDevCalculator/src/main/java/edu/escuelaing/arsw/MeanStdDevCalculator.java'
+'C:/Users/alexa/LinkedListMeanStdDevCalculator/src/main/java/edu/escuelaing/arsw/Node.java'
+'C:/Users/alexa/LinkedListMeanStdDevCalculator/src/main/java/edu/escuelaing/arsw/StdDevCalculator.java'
+C:\Users\alexa\LinkedListMeanStdDevCalculator\src\main\java = 1718423330081
+C:\Users\alexa\LinkedListMeanStdDevCalculator\target\site\apidocs\allclasses-index.html = 1718570197844
+C:\Users\alexa\LinkedListMeanStdDevCalculator\target\site\apidocs\allpackages-index.html = 1718570197844
+C:\Users\alexa\LinkedListMeanStdDevCalculator\target\site\apidocs\copy.svg = 1718570197886
+C:\Users\alexa\LinkedListMeanStdDevCalculator\target\site\apidocs\element-list = 1718570197786
+C:\Users\alexa\LinkedListMeanStdDevCalculator\target\site\apidocs\help-doc.html = 1718570197876
+C:\Users\alexa\LinkedListMeanStdDevCalculator\target\site\apidocs\index-all.html = 1718570197860
+C:\Users\alexa\LinkedListMeanStdDevCalculator\target\site\apidocs\index.html = 1718570197866
+C:\Users\alexa\LinkedListMeanStdDevCalculator\target\site\apidocs\link.svg = 1718570197886
+C:\Users\alexa\LinkedListMeanStdDevCalculator\target\site\apidocs\member-search-index.js = 1718570197851
+C:\Users\alexa\LinkedListMeanStdDevCalculator\target\site\apidocs\module-search-index.js = 1718570197844
+C:\Users\alexa\LinkedListMeanStdDevCalculator\target\site\apidocs\overview-tree.html = 1718570197831
+C:\Users\alexa\LinkedListMeanStdDevCalculator\target\site\apidocs\package-search-index.js = 1718570197851
+C:\Users\alexa\LinkedListMeanStdDevCalculator\target\site\apidocs\script.js = 1718570197881
+C:\Users\alexa\LinkedListMeanStdDevCalculator\target\site\apidocs\search-page.js = 1718570197891
+C:\Users\alexa\LinkedListMeanStdDevCalculator\target\site\apidocs\search.html = 1718570197866
+C:\Users\alexa\LinkedListMeanStdDevCalculator\target\site\apidocs\search.js = 1718570197891
+C:\Users\alexa\LinkedListMeanStdDevCalculator\target\site\apidocs\stylesheet.css = 1718570197881
+C:\Users\alexa\LinkedListMeanStdDevCalculator\target\site\apidocs\tag-search-index.js = 1718570197851
+C:\Users\alexa\LinkedListMeanStdDevCalculator\target\site\apidocs\type-search-index.js = 1718570197851

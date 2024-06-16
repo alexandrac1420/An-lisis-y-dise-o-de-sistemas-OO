@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"edu.escuelaing.arsw","l":"LinkedList"},{"p":"edu.escuelaing.arsw","l":"MeanStdDevCalculator"},{"p":"edu.escuelaing.arsw","l":"Node"}];updateSearchResults();

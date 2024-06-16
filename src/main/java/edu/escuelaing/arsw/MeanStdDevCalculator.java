@@ -32,8 +32,11 @@ public class MeanStdDevCalculator {
                         numbers = new LinkedList<>();
                     }
                 } else {
-                    double num = Double.parseDouble(line);
-                    numbers.addLast(num);
+                    try {
+                        double num = Double.parseDouble(line);
+                        numbers.addLast(num);
+                    } catch (NumberFormatException e) {
+                    }
                 }
             }
 
@@ -52,11 +55,11 @@ public class MeanStdDevCalculator {
         MeanCalculator meanCalculator = (nums) -> {
             double sum = 0;
             int count = 0;
-            LinkedList<Double>.Node current = nums.head;
+            Node<Double> current = nums.getHead();
             while (current != null) {
-                sum += current.val;
+                sum += current.getVal();
                 count++;
-                current = current.next;
+                current = current.getNext();
             }
             return sum / count;
         };
@@ -64,11 +67,11 @@ public class MeanStdDevCalculator {
         StdDevCalculator stdDevCalculator = (nums, mean) -> {
             double sum = 0;
             int count = 0;
-            LinkedList<Double>.Node current = nums.head;
+            Node<Double> current = nums.getHead();
             while (current != null) {
-                sum += Math.pow(current.val - mean, 2);
+                sum += Math.pow(current.getVal() - mean, 2);
                 count++;
-                current = current.next;
+                current = current.getNext();
             }
             return Math.sqrt(sum / (count - 1));
         };

@@ -1,83 +1,78 @@
 package edu.escuelaing.arsw;
 
+public class LinkedList<T> {
+    private Node<T> head;
+    private Node<T> tail;
 
-public class LinkedList <T>{
-    Node head;
-    private Node tail;
-
-    class Node{
-        T val;
-        Node next;
-        Node(T val){
-            this.val = val;
-        }
+    public Node<T> getHead() {
+        return head;
     }
 
-    public void addFirst(T val){
-        if(isEmpty()){
-            head = new Node(val);
+    public void addFirst(T val) {
+        if (isEmpty()) {
+            head = new Node<>(val);
             tail = head;
             return;
         }
-        Node newNode = new Node(val);
+        Node<T> newNode = new Node<>(val);
         newNode.next = head;
         head = newNode;
     }
 
-    public void addLast(T val){
-        if(isEmpty()){
-            head = new Node(val);
+    public void addLast(T val) {
+        if (isEmpty()) {
+            head = new Node<>(val);
             tail = head;
             return;
         }
-        Node newNode = new Node(val);
+        Node<T> newNode = new Node<>(val);
         tail.next = newNode;
         tail = newNode;
     }
 
-    public void add(int pos, T val){
-        if (pos == 1){
+    public void add(int pos, T val) {
+        if (pos == 1) {
             addFirst(val);
             return;
         }
-        Node current = head;
+        Node<T> current = head;
         int count = 1;
-        while(count < pos -1){
+        while (count < pos - 1) {
             count++;
             current = current.next;
         }
-        Node newNode = new Node(val);
+        Node<T> newNode = new Node<>(val);
         newNode.next = current.next;
         current.next = newNode;
     }
 
-    public T deleteFirst(){
-        if(isEmpty()){
-            throw new RuntimeException ("List is Empty");
+    public T deleteFirst() {
+        if (isEmpty()) {
+            throw new RuntimeException("List is Empty");
         }
-        Node current = head;
+        Node<T> current = head;
         head = head.next;
         current.next = null;
-        if (isEmpty()){
+        if (isEmpty()) {
             tail = null;
         }
         return current.val;
     }
 
-    public T deletelast(){
-        if(isEmpty()){
+    public T deleteLast() {
+        if (isEmpty()) {
             throw new RuntimeException("list is Empty");
         }
-        if(head == tail){
+        if (head == tail) {
             T val = head.val;
             head = null;
             tail = null;
             return val;
         }
-        Node current = head;
-        Node prev = null;
+        Node<T> current = head;
+        Node<T> prev = null;
 
-        while (current.next != null){
+        while (current.next != null) {
             prev = current;
             current = current.next;
         }
@@ -86,18 +81,18 @@ public class LinkedList <T>{
         return current.val;
     }
 
-    public T delete(int pos){
-        if(isEmpty()){
+    public T delete(int pos) {
+        if (isEmpty()) {
             throw new RuntimeException("list is Empty");
         }
-        if(pos == 1){
-            deleteFirst();
+        if (pos == 1) {
+            return deleteFirst();
         }
-        Node current = head;
-        Node prev = null;
+        Node<T> current = head;
+        Node<T> prev = null;
         int count = 1;
 
-        while (count < pos){
+        while (count < pos) {
             count++;
             prev = current;
             current = current.next;
@@ -107,10 +102,10 @@ public class LinkedList <T>{
         return current.val;
     }
 
-    public boolean search (T val){
-        Node current = head;
-        while (current != null){
-            if(val == current.val){
+    public boolean search(T val) {
+        Node<T> current = head;
+        while (current != null) {
+            if (val.equals(current.val)) {  // Use equals() for object comparison
                 return true;
             }
             current = current.next;
@@ -118,14 +113,14 @@ public class LinkedList <T>{
         return false;
     }
 
-    public boolean isEmpty(){
+    public boolean isEmpty() {
         return head == null;
     }
 
-    public void print(){
-        Node current = head;
-        while (current != null){
-            System.out.println(current.val + " ");
+    public void print() {
+        Node<T> current = head;
+        while (current != null) {
+            System.out.print(current.val + " ");
             current = current.next;
         }
         System.out.println();
