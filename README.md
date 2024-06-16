@@ -156,8 +156,7 @@ You need to install the following tools and configure their dependencies:
     Media: 60,32
     Desviación Estándar: 62,26
     ```
-![Example](<![alt text](![image](https://github.com/alexandrac1420/MeanStdDevCalculator/assets/138069735/56a2363c-c976-4036-9ef8-e9720dbc2dbf)
-)>)
+![Example](<https://github.com/alexandrac1420/MeanStdDevCalculator/blob/master/Pictures/Captura%20de%20pantalla%202024-06-16%20160516.png>)
 
 ## Test Report - MeanStdDevCalculator
 
